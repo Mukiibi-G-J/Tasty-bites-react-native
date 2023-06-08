@@ -1,0 +1,10 @@
+npm install @react-navigation/stack
+npm install react-native-gesture-handler
+npm install react-native-screens react-native-safe-area-context
+npm i @react-navigation/drawer
+npm install @react-navigation/native @react-navigation/native-stack
+npm i @react-navigation/stack
+plugins: [
+    'react-native-reanimated/plugin',
+  ],
+npm install react-redux redux redux-thunk
