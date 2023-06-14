@@ -4,7 +4,7 @@ export const SET_SELECTED_TAB = 'SET_SELECTED_TAB';
 export const GlobaleContext = createContext();
 const initialState = {
   tab: {
-    selectedTab: '',
+    selectedTab: 'HOME',
   },
 };
 

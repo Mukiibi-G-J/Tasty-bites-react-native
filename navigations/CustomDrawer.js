@@ -121,6 +121,10 @@ const CustomDrawerContent = ({
             isFocused={selectedTab == constants.screens.home}
             onPress={() => {
               setSelectedTab(constants.screens.home);
+              dispatch({
+                type: SET_SELECTED_TAB,
+                payload: constants.screens.home,
+              });
               navigation.navigate('MainLayout');
             }}
           />
@@ -143,6 +147,10 @@ const CustomDrawerContent = ({
             isFocused={selectedTab == constants.screens.favourite}
             onPress={() => {
               setSelectedTab(constants.screens.favourite);
+              dispatch({
+                type: SET_SELECTED_TAB,
+                payload: constants.screens.favourite,
+              });
               navigation.navigate('MainLayout');
             }}
           />
@@ -161,6 +169,10 @@ const CustomDrawerContent = ({
             isFocused={selectedTab == constants.screens.track_order}
             onPress={() => {
               setSelectedTab(constants.screens.track_order);
+              dispatch({
+                type: SET_SELECTED_TAB,
+                payload: constants.screens.track_order,
+              });
               navigation.navigate('MainLayout');
             }}
           />
@@ -170,6 +182,10 @@ const CustomDrawerContent = ({
             isFocused={selectedTab == constants.screens.notification}
             onPress={() => {
               setSelectedTab(constants.screens.notification);
+              dispatch({
+                type: SET_SELECTED_TAB,
+                payload: constants.screens.notification,
+              });
               navigation.navigate('MainLayout');
             }}
           />
@@ -179,6 +195,10 @@ const CustomDrawerContent = ({
             isFocused={selectedTab == constants.screens.coupons}
             onPress={() => {
               setSelectedTab(constants.screens.coupons);
+              dispatch({
+                type: SET_SELECTED_TAB,
+                payload: constants.screens.coupons,
+              });
               navigation.navigate('MainLayout');
             }}
           />
@@ -188,6 +208,10 @@ const CustomDrawerContent = ({
             isFocused={selectedTab == constants.screens.settings}
             onPress={() => {
               setSelectedTab(constants.screens.settings);
+              dispatch({
+                type: SET_SELECTED_TAB,
+                payload: constants.screens.settings,
+              });
               navigation.navigate('MainLayout');
             }}
           />
@@ -197,6 +221,10 @@ const CustomDrawerContent = ({
             isFocused={selectedTab == constants.screens.invite_friends}
             onPress={() => {
               setSelectedTab(constants.screens.invite_friends);
+              dispatch({
+                type: SET_SELECTED_TAB,
+                payload: constants.screens.invite_friends,
+              });
               navigation.navigate('MainLayout');
             }}
           />
@@ -206,6 +234,10 @@ const CustomDrawerContent = ({
             isFocused={selectedTab == constants.screens.help}
             onPress={() => {
               setSelectedTab(constants.screens.help);
+              dispatch({
+                type: SET_SELECTED_TAB,
+                payload: constants.screens.help,
+              });
               navigation.navigate('MainLayout');
             }}
           />
@@ -257,6 +289,8 @@ const CustomDrawer = () => {
         }}
         screenOptions={{
           activeTintColor: COLORS.primary,
+          headerShown: false,
+
         }}
         sceneContainerStyle={{
           backgroundColor: 'transparent',
